@@ -5,10 +5,11 @@
 
 :root {
   --phone-shadow: 0 12px 8px 4px rgba(0, 0, 0, 0.32);
-  --mountain-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+  --mountain-shadow: 0 8px 16px rgba(0, 0, 0, 0.32);
   --grass: #5bbd64;
-  --grass-shadow: #a04134;
+  --grass-dark: #3b7d41;
   --ground: #b85951;
+  --ground-shadow: #a94e42;
   --white: #fff;
 }
 
@@ -37,12 +38,30 @@ body {
   bottom: 0;
 }
 
-.layer-1 {
+.rabbit-1 {
   width: 80px;
   height: 458px;
 
   left: 52px;
+
+  animation-name: hide-1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
+
+@keyframes hide-1 {
+  25% {
+    height: 400px;
+  }
+  100% {
+    height: 458px;
+  }
+}
+
+/* .rabbit-1 input[type='checkbox'] {
+  Agregar contador
+} */
 
 .layer-2 {
   width: 80px;
@@ -122,7 +141,21 @@ body {
   z-index: 7;
 }
 
-.bunny-head__ears {
+.rabbit-head {
+  position: relative;
+}
+
+.rabbit-head input[type='checkbox'] {
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.rabbit-head__ears {
   width: 22px;
   height: 52px;
   background-color: #f7b2d5;
@@ -133,7 +166,7 @@ body {
   border-radius: 99%;
 }
 
-.bunny-head__face {
+.rabbit-head__face {
   height: 52px;
   background-color: var(--white);
 
@@ -141,7 +174,7 @@ body {
   border-radius: 99%;
 }
 
-.bunny-head__eyes {
+.rabbit-head__eyes {
   width: 4px;
   height: 4px;
   background: grey;
@@ -179,18 +212,22 @@ body {
 
 .grass {
   height: 52px;
-  background: linear-gradient(var(--grass) 54%, transparent 0%);
+  background: linear-gradient(
+    var(--grass) 20%,
+    var(--grass-dark) 54%,
+    transparent 0%
+  );
 }
 
 .zigzag {
   height: inherit;
-  background: linear-gradient(45deg, var(--grass-shadow) 25%, transparent 25%) 0
-      8px repeat-x,
-    linear-gradient(135deg, var(--grass-shadow) 25%, transparent 25%) -10px 28px
+  background: linear-gradient(45deg, var(--ground-shadow) 25%, transparent 25%)
+      0 8px repeat-x,
+    linear-gradient(135deg, var(--ground-shadow) 25%, transparent 25%) -10px 28px
       repeat-x,
-    linear-gradient(225deg, var(--grass-shadow) 25%, transparent 25%) -10px 28px
+    linear-gradient(225deg, var(--ground-shadow) 25%, transparent 25%) -10px 28px
       repeat-x,
-    linear-gradient(315deg, var(--grass-shadow) 25%, transparent 25%) 0 8px
+    linear-gradient(315deg, var(--ground-shadow) 25%, transparent 25%) 0 8px
       repeat-x;
   background-size: 20px 20px;
 }
