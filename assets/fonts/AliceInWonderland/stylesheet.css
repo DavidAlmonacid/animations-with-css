@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Alice in Wonderland';
+  src: local('Alice Regular'), local('Alice-Regular'),
+    url('AliceInWonderland.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
