@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text: hsl(164, 24%, 44%);
+  --phone-shadow: 0 12px 8px 4px rgba(0, 0, 0, 0.32);
+  --mountain-shadow: 0 8px 16px rgba(0, 0, 0, 0.32);
+  --grass: #5bbd64;
+  --grass-dark: #3b7d41;
+  --ground: #b85951;
+  --ground-shadow: #a94e42;
+  --white: #fff;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: var(--text);
+}
+
+#root {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}

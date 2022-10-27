@@ -1,0 +1,51 @@
+.mountain {
+  background-color: var(--ground);
+  box-shadow: var(--mountain-shadow);
+  overflow: hidden;
+
+  border-radius: 18px;
+}
+
+.grass {
+  height: 52px;
+  background: linear-gradient(
+    var(--grass) 20%,
+    var(--grass-dark) 54%,
+    transparent 0%
+  );
+}
+
+.zigzag {
+  height: inherit;
+  background: linear-gradient(45deg, var(--ground-shadow) 25%, transparent 25%)
+      0 8px repeat-x,
+    linear-gradient(135deg, var(--ground-shadow) 25%, transparent 25%) -10px 28px
+      repeat-x,
+    linear-gradient(225deg, var(--ground-shadow) 25%, transparent 25%) -10px 28px
+      repeat-x,
+    linear-gradient(315deg, var(--ground-shadow) 25%, transparent 25%) 0 8px
+      repeat-x;
+  background-size: 20px 20px;
+}
+
+#mountain-1 {
+  width: 228px;
+  height: 400px;
+
+  margin: 0 auto;
+
+  right: 0;
+  left: 0;
+}
+
+#mountain-2 {
+  width: 180px;
+  height: 324px;
+}
+
+#mountain-3 {
+  width: 160px;
+  height: 244px;
+
+  right: 0;
+}

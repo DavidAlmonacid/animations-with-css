@@ -1,0 +1,9 @@
+.title {
+  font: 400 44px 'Alice in Wonderland', serif;
+  text-shadow: -0.5px 1px 2px rgba(0, 0, 0, 0.8);
+  padding: 32px 0;
+}
+
+.score {
+  font-size: 18px;
+}

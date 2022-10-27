@@ -1,0 +1,24 @@
+.phone {
+  width: 100%;
+  max-width: 375px;
+  height: 100vh;
+  max-height: 812px;
+  background-color: #c8f9f9;
+
+  position: relative;
+}
+
+.phone > div {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (min-width: 390px) {
+  .phone {
+    box-shadow: var(--phone-shadow);
+    overflow: hidden;
+
+    border: solid 8px #000;
+    border-radius: 40px;
+  }
+}

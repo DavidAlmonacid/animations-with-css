@@ -1,0 +1,79 @@
+#rabbit-1 {
+  height: 458px;
+
+  left: 92px;
+
+  animation-name: hide-1;
+  animation-duration: 0.86s;
+  animation-timing-function: cubic-bezier(0.36, 0, 0.66, -0.56);
+  animation-iteration-count: infinite;
+}
+
+@keyframes hide-1 {
+  25% {
+    height: 400px;
+  }
+  100% {
+    height: 458px;
+  }
+}
+
+#rabbit-2 {
+  height: 458px;
+
+  right: 92px;
+
+  animation-name: hide-2;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.64, 0, 0.78, 0);
+  animation-iteration-count: infinite;
+}
+
+@keyframes hide-2 {
+  25% {
+    height: 380px;
+  }
+  100% {
+    height: 458px;
+  }
+}
+
+#rabbit-3 {
+  height: 382px;
+
+  left: 44px;
+
+  animation-name: hide-3;
+  animation-duration: 0.82s;
+  animation-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+  animation-iteration-count: infinite;
+}
+
+@keyframes hide-3 {
+  25% {
+    height: 316px;
+  }
+  100% {
+    height: 382px;
+  }
+}
+
+#rabbit-4 {
+  height: 302px;
+
+  right: 28px;
+
+  animation-name: hide-4;
+  animation-duration: 0.72s;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.75, 0);
+  animation-iteration-count: infinite;
+}
+
+@keyframes hide-4 {
+  25% {
+    height: 232px;
+  }
+  100% {
+    height: 302px;
+  }
+}
