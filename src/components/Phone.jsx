@@ -1,6 +1,8 @@
 import Header from './Header';
-import Mountain from './Mountain';
 import Rabbit from './Rabbit';
+import Mountain from './Mountain';
+import Bush from './Bush';
+import Cloud from './Cloud';
 import { useState } from 'react';
 import './Phone.css';
 
@@ -20,6 +22,10 @@ const Phone = () => {
 
       <Rabbit id='rabbit-4' score={score} setScore={setScore} />
       <Mountain id='mountain-3' />
+
+      <Bush />
+      <Cloud id='cloud-1' />
+      <Cloud id='cloud-2' />
     </div>
   );
 };

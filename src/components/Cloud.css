@@ -1,0 +1,30 @@
+.cloud {
+  display: grid;
+  justify-items: center;
+}
+
+.cloud > * {
+  background-color: #d3d3d3;
+}
+
+.cloud__top {
+  width: 126px;
+  height: 126px;
+  border-radius: 9em;
+}
+
+.cloud__bottom {
+  width: 244px;
+  height: 88px;
+
+  margin-top: -53px;
+  border-radius: 9em;
+}
+
+#cloud-1 {
+  left: -68px;
+}
+
+#cloud-2 {
+  right: -68px;
+}

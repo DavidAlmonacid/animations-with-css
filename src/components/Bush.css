@@ -1,0 +1,38 @@
+.bush {
+  display: grid;
+  justify-items: center;
+
+  width: fit-content;
+
+  margin: 0 auto;
+
+  right: 0;
+  left: 0;
+}
+
+.bush > * {
+  background-color: #64a165;
+}
+
+.bush__top {
+  width: 96px;
+  height: 96px;
+  border-radius: 9em;
+}
+
+.bush__bottom {
+  width: 141px;
+  height: 93px;
+  margin-top: -4px;
+}
+
+.bush__sides {
+  justify-self: start;
+
+  width: 118px;
+  height: 134px;
+  box-shadow: 140px 0 #64a165;
+
+  border-radius: 99%;
+  margin: -134px 0 0 -59px;
+}
