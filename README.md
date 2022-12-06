@@ -9,7 +9,7 @@ This project was made following the Platzi's [Animaciones con CSS](https://platz
 </div>
 
 <div align="center">
-  <a href=""><img src="https://img.shields.io/badge/visit the site-4D7F72?style=for-the-badge" /></a>
+  <a href="https://bit.ly/3VT0Oag"><img src="https://img.shields.io/badge/visit the site-4D7F72?style=for-the-badge" /></a>
 </div>
 
 #
